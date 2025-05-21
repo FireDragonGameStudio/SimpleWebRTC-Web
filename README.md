@@ -1,11 +1,12 @@
 # 🌐 Simple WebRTC Signaling & Streaming UI WebClient (JavaScript + Unity Compatible)
 
-This project provides a full WebRTC signaling and streaming test harness, designed to work **with or without Unity**, using a browser-based interface. It works especially well with the [SimpleWebRTC](https://assetstore.unity.com/packages/tools/network/simple-webrtc-272469) Unity asset, allowing you to **bypass Unity’s native media streaming** and use **standard WebRTC-compatible streams** from any device!
+This project provides a full WebRTC signaling and streaming test harness, designed to work **with or without Unity**, using a browser-based interface. It works especially well with the [SimpleWebRTC](https://assetstore.unity.com/packages/tools/network/simplewebrtc-309727) Unity asset, allowing you to **bypass Unity’s native media streaming** and use **standard WebRTC-compatible streams** from any device!
 
 ✅ **Works with Chrome, Firefox, Edge, and Unity WebRTC (via SimpleWebRTC)**  
 🔁 **Handles connect/disconnect cycles cleanly**  
-🎙️ **Supports media selection (camera/mic), video/audio streaming, and data channels**
+🎙️ **Supports media selection (camera/mic), video/audio streaming, and data channels**  
 🎥 **Works on desktop and mobile browsers! (check WebRTC support, before using!)**
+
 ---
 
 ## ✨ Features
@@ -16,7 +17,7 @@ This project provides a full WebRTC signaling and streaming test harness, design
 - Manually start/stop local media streams
 - Send messages over WebRTC data channels
 - Automatically manages remote video/audio elements
-- Compatible with Unity (via [SimpleWebRTC](https://assetstore.unity.com/packages/tools/network/simple-webrtc-272469))
+- Compatible with Unity (via [SimpleWebRTC](https://assetstore.unity.com/packages/tools/network/simplewebrtc-309727))
 
 ---
 
@@ -132,11 +133,11 @@ The script will:
 
 ## 🧩 Unity Integration
 
-This interface works beautifully with the [SimpleWebRTC Unity asset](https://assetstore.unity.com/packages/tools/network/simple-webrtc-272469).
+This interface works beautifully with the [SimpleWebRTC](https://assetstore.unity.com/packages/tools/network/simplewebrtc-309727) Unity asset.
 
 ### Why Use This?
 
-You can **bypass Unity’s native video/audio capture** and use **standard browser APIs** for full control. Stream from:
+You can **bypass any native video/audio capture** or **content streaming** and use **standard browser APIs** for full control. Stream from:
 
 * External webcams
 * Virtual devices
@@ -157,7 +158,7 @@ MIT License. Use freely in personal or commercial projects.
 
 Thanks to:
 
-* [SimpleWebRTC Unity](https://assetstore.unity.com/packages/tools/network/simple-webrtc-272469)
+* [SimpleWebRTC](https://assetstore.unity.com/packages/tools/network/simplewebrtc-309727) Unity
 * The WebRTC and MediaDevices APIs
 
 ---
