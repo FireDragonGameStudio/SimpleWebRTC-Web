@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebRTCManager Test Page</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>WebRTCManager Test Page</h1>
+
+      <div class="controls">
+        <h2>Configuration & Connection</h2>
+        <div>
+          <label for="websocketUrl">WebSocket URL:</label>
+          <input type="url" id="websocketUrl" value="wss://unity-webrtc-signaling.glitch.me" />
+        </div>
+        <div>
+          <label for="localPeerId">Your Peer ID:</label>
+          <input type="text" id="localPeerId" readonly />
+        </div>
+        <div>
+          <label for="stunServer">STUN Server URL:</label>
+          <input type="url" id="stunServer" value="stun:stun.l.google.com:19302" />
+        </div>
+        <button id="connectWsBtn">Connect WebSocket</button>
+        <button id="disconnectWsBtn" class="disconnect hidden">Disconnect WebSocket</button>
+      </div>
+      <div class="controls">
+        <h2>Select Camera and Microphone</h2>
+        <label for="cameraSelect">Camera:</label>
+        <select id="cameraSelect"></select>
+        <br /><br />
+        <label for="micSelect">Microphone:</label>
+        <select id="micSelect"></select>
+        <br /><br />
+        <button id="refreshDevicesBtn">Refresh Devices</button>
+      </div>
+      <div class="media-area">
+        <h2>Local Media</h2>
+        <video id="localVideoPlayer" autoplay muted playsinline></video>
+        <!-- <video id="localVideoPlayer" autoplay muted></video> -->
+        <button id="startMediaBtn">Start Local Media</button>
+        <button id="stopMediaBtn" class="disconnect hidden">Stop Local Media</button>
+        <button id="initiateOffersBtn" class="hidden">Initiate Offers to All</button>
+        <button id="closeWebRTCBtn" class="disconnect hidden">Close All WebRTC</button>
+      </div>
+
+      <div class="media-area">
+        <h2>Remote Media</h2>
+        <div id="remoteVideosContainer"></div>
+      </div>
+
+      <div class="controls">
+        <h2>Data Channel Communication</h2>
+        <div>
+          <label for="dataChannelMessage">Message:</label>
+          <input type="text" id="dataChannelMessage" value="Hello from the browser!" />
+        </div>
+        <div>
+          <label for="targetPeerId">Target Peer ID (optional, blank for all):</label>
+          <input type="text" id="targetPeerId" placeholder="Enter specific peer ID or leave blank" />
+        </div>
+        <button id="sendDataBtn" class="hidden">Send Data</button>
+      </div>
+    </div>
+
+    <script src="./src/webRTCManager.js"></script>
+    <script src="./src/main.js"></script>
+  </body>
+</html>

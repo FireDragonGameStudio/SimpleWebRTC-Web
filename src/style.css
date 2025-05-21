@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1,
+h2 {
+  color: #333;
+  text-align: center;
+}
+.controls,
+.media-area,
+.logs {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.controls h2,
+.media-area h2,
+.logs h2 {
+  margin-top: 0;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+input[type="text"],
+input[type="url"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button {
+  background-color: #5cb85c;
+  color: white;
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+button:hover {
+  background-color: #4cae4c;
+}
+button.disconnect {
+  background-color: #d9534f;
+}
+button.disconnect:hover {
+  background-color: #c9302c;
+}
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  padding: 10px 40px 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  color: #333;
+  outline: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg viewBox='0 0 140 140' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,0 140,0 70,100' fill='%23888'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+select:hover {
+  border-color: #888;
+}
+select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+  background-color: #fff;
+}
+#localVideoPlayer {
+  width: 320px;
+  height: 240px;
+  background: #eee;
+  border: 1px solid #ccc;
+  margin: 10px auto;
+  display: block;
+}
+#remoteVideosContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+  background: #e9e9e9;
+  min-height: 100px;
+}
+#remoteVideosContainer video,
+#remoteVideosContainer audio {
+  width: 240px;
+  height: 180px;
+  background: #ddd;
+  border: 1px solid #bbb;
+}
+#remoteVideosContainer audio {
+  height: 40px;
+} /* Smaller for audio-only elements */
+#logOutput {
+  height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+  white-space: pre-wrap;
+  font-size: 0.9em;
+  border-radius: 4px;
+}
+.hidden {
+  display: none;
+}
