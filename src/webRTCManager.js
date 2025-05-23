@@ -872,6 +872,8 @@ class WebRTCManager {
   }
 }
 
+export { WebRTCManager };
+
 // Example Usage (Illustrative - you'll need HTML and to call these):
 /*
 async function main() {

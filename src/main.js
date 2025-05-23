@@ -1,3 +1,5 @@
+import { WebRTCManager } from "./webRTCManager.js";
+
 const websocketUrlInput = document.getElementById("websocketUrl");
 const localPeerIdInput = document.getElementById("localPeerId");
 const stunServerInput = document.getElementById("stunServer");
