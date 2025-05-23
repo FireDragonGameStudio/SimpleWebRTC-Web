@@ -7,6 +7,8 @@ This project provides a full WebRTC signaling and streaming test harness, design
 🎙️ **Supports media selection (camera/mic), video/audio streaming, and data channels**  
 🎥 **Works on desktop and mobile browsers! (check WebRTC support, before using!)**
 
+![image](https://github.com/user-attachments/assets/a88c5f69-ec41-4e4a-93f7-1b5998b63257)
+
 ---
 
 ## ✨ Features
